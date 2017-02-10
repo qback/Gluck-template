@@ -1,0 +1,13 @@
+mixin header()
+	+b('header').header&attributes(attributes)
+		+e.wrapper
+			+e.top
+				+e.user-sign
+					+e('a').sign-link_login(href='#{jv0}' title='Log in') Log in
+					+e('a').sign-link_signup(href='#{jv0}' title='Sign up') Sign up
+				+e('a').logo(href='#{jv0}' title='Home') URLAUBSGLÜCK
+			+e.text-container
+				+e('h1').heading Share your holiday dreams
+				+e('p').subheading And find the perfect partner to fullfill it
+				+e('a').button(href='#{jv0}' title='Go') Find your holiday partner
+

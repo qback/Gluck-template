@@ -1,0 +1,151 @@
+.header
+	padding-top em(38)
+	display block
+	min-height em(700)
+	background-color #c58536
+	background-image url('../images/bg-header.jpg')
+	background-repeat no-repeat
+	background-position 50% 50%
+	background-size cover
+
+	+below($small)
+		padding-top em(20)
+		min-height em(540)
+
+	&__wrapper
+		wrapper()
+
+		+below($middle)
+			padding-x prc(50/768)
+
+		+below($small)
+			padding-x 0
+
+
+	&__top
+		clearfix()
+		margin-bottom em(143)
+
+		+below($small)
+			margin-bottom em(30)
+			text-align center
+
+
+	&__logo
+		position relative
+		top em(10, 20)
+		font-family $Montserrat
+		font-size em(20)
+		font-weight 700
+		text-decoration none
+		letter-spacing em(1, 20)
+		text-transform uppercase
+		color #fff
+
+		&:hover
+			color $ui-base-color
+
+		&:active
+			top 12px
+
+		+below($small)
+			top 0
+
+			&:active
+				top 2px
+
+
+	&__user-sign
+		float right
+
+		+below($small)
+			margin-right em(20)
+			margin-bottom em(117)
+			float none
+
+	&__sign-link
+		position relative
+		display inline-block
+		font-family $Montserrat
+		font-size em(14)
+		font-weight 700
+		line-height (32/14)
+		text-decoration none
+		color #fff
+		transition all .2s
+
+		&:hover
+			color $ui-base-color
+
+		&:active
+			color $ui-base-color
+			top 2px
+
+		&_signup
+			padding-x em(17, 14)
+			text-align center
+			background-color rgba(26, 25, 21, 0)
+			border 2px solid #fff
+			border-radius em(18, 14)
+			margin-left em(17, 14)
+
+			&:hover
+				border 2px solid $ui-base-color
+
+			&:active
+				top 2px
+
+	&__text-container
+		margin-x auto
+		max-width em(500)
+		text-align center
+
+		+below($small)
+			max-width em(280)
+
+	&__heading
+		margin-bottom em(30, 52)
+		font-family $Montserrat
+		font-size em(52)
+		font-weight 700
+		line-height (60/52)
+		text-transform uppercase
+		color #fff
+
+		+below($small)
+			margin-bottom em(14, 30)
+			font-size em(30)
+
+	&__subheading
+		margin-bottom em(36, 24)
+		font-family $Roboto
+		font-size em(24)
+		font-weight 300
+		color #fff
+
+		+below($small)
+			margin-bottom em(16, 18)
+			font-size em(18)
+			line-height (20/18)
+
+	&__button
+		position relative
+		padding em(14, 14) em(25, 14) em(12, 14) em(23, 14)
+		display inline-block
+		font-family $Montserrat
+		font-size em(14)
+		font-weight 700
+		text-decoration none
+		color #fff
+		background-color $ui-base-color
+		border-radius em(20, 14)
+
+		&:hover
+			box-shadow inset 0 0 0 1px alpha(#fff, .4)
+
+		&:active
+			top 2px
+			box-shadow inset 0 0 0 1px alpha(#fff, .9)
+
+		+below($small)
+			padding em(14, 14) em(51, 14) em(12, 14) em(50, 14)
