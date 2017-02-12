@@ -1,0 +1,9 @@
+mixin partner(data)
+	+b('article').partner&attributes(attributes)
+		+e('figure').avatar
+			+e('img').image(src='assets/images/#{data.img}' alt='Partner image')
+			-var iconName = data.icon
+			+e('span')(class='icon-bg_#{iconName}')
+				+icon(iconName)(class='icon_#{iconName}')
+		+e('cite').name #{data.name}
+		+e('blockquote').quote #{data.quote}
