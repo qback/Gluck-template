@@ -1,5 +1,7 @@
 include ../steps/steps
+include ../partners/partners
 
 mixin index()
 	+b('main').index&attributes(attributes)
 		+steps()
+		+partners(getData('persons.json'))

@@ -1,0 +1,98 @@
+.partners
+	display block
+	text-align center
+	background #fff
+	padding-top em(98)
+	padding-bottom em(30)
+
+	+below($small)
+		padding-top em(27)
+
+	&__wrapper
+		wrapper()
+
+		+below($small)
+			padding-x em(10)
+
+	&__heading
+		color #333
+		font-family $Montserrat
+		font-size em(22)
+		font-weight 700
+		margin-bottom em(35, 22)
+
+		+below($small)
+			line-height (24/22)
+			margin-bottom em(15, 22)
+
+	&__list
+		list-style none
+		clearfix()
+		margin-bottom em(37)
+		overflow hidden
+
+		+below($large)
+			max-width em(480)
+			margin-x auto
+
+		+below($small)
+			max-width em(220)
+			margin-bottom em(24)
+
+	&__partner
+		float left
+		width em(220)
+		margin-right em(20)
+
+		+below($large)
+			margin-right em(40)
+			margin-bottom em(58)
+
+		+below($small)
+			margin-right 0
+			margin-bottom em(30)
+
+		&:nth-child(4n)
+			margin-right 0
+
+		&:nth-child(2n)
+
+			+below($large)
+				margin-right 0
+
+		&:nth-last-child(1)
+		&:nth-last-child(2)
+
+			+between($small, $large)
+				margin-bottom 0
+
+		&:nth-last-child(1)
+			+below($small)
+				margin-bottom 0
+
+	&__button
+		position relative
+		display inline-block
+		color $ui-base-color
+		font-family $Montserrat
+		font-size em(14)
+		font-weight 700
+		border-radius em(20, 14)
+		border 2px solid $ui-base-color
+		background-color #fff
+		padding em(11, 14) em(30, 14) em(12, 14) em(28, 14)
+		text-decoration none
+
+		+below($small)
+			padding-x em(70, 14)
+
+		&:hover
+			background-color $ui-base-color
+			color #fff
+
+		&:active
+			top 2px
+
+
+
+

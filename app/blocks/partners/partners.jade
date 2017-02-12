@@ -1,0 +1,11 @@
+include ../partner/partner
+
+mixin partners(items)
+	+b('section').partners&attributes(attributes)
+		+e.wrapper
+			+e('h2').heading Meet a partner for your best holiday
+			+e('ul').list
+				each item in items
+					+e('li').partner
+						+partner(item)
+			+e('a').button(href='#{jv0}' title='View other peoples') See other partners
