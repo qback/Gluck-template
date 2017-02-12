@@ -3,7 +3,7 @@
 	display block
 	background-color #fff
 
-	+below($middle)
+	+below($tiny)
 		padding-top em(37)
 
 	&__wrapper
@@ -25,6 +25,10 @@
 
 	&__list
 		list-style none
+		clearfix()
+
+		+below($large)
+			padding-x prc(10/768)
 
 	&__step
 		position relative
@@ -34,8 +38,8 @@
 		vertical-align top
 
 		+below($large)
-			margin-right prc(20/768)
-			width prc(236/768)
+			margin-right prc(20/748)
+			width prc(236/748)
 
 		+below($tiny)
 			margin-x auto
@@ -57,7 +61,7 @@
 		height 55px
 		cursor pointer
 
-		+below($tiny)
+		+below($large)
 			top 9.5%
 
 		+below($tiny)
