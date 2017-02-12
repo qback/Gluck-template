@@ -1,0 +1,27 @@
+[
+	{
+		"name": "Bradley Hunter",
+		"quote": "Based in Chicago. I love playing tennis and loud music.",
+		"img": "person-1.jpg",
+		"icon": "tv"
+	},
+	{
+		"name": "Heather Walker",
+		"quote": "I'm a happy person that loves cats and climbing on mountains.",
+		"img": "person-2.jpg",
+		"icon": "cup"
+	},
+	{
+		"name": "Lucas Marsha",
+		"quote": "I get my inspiration from nature and objects around me. I have a passion to colours, typography and skateboards.",
+		"img": "person-3.jpg",
+		"icon": "flask"
+	},
+	{
+		"name": "Bradley Hunter",
+		"quote": "Based in Chicago. I love playing tennis and loud music.",
+		"img": "person-4.jpg",
+		"icon": "airplane"
+	}
+
+]
