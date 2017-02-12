@@ -1,0 +1,10 @@
+mixin step(data)
+	+b.step&attributes(attributes)
+		each item, index in data
+			+e(class='container_bg#{index + 1}')
+				+e.info
+					+e('span').badge #{item.badge}
+					+e('h3').heading #{item.heading}
+					+e('p').desc #{item.text}
+
+
