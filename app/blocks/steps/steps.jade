@@ -1,0 +1,17 @@
+include ../step/step
+include ../icon/icon
+
+mixin steps()
+	+b('section').steps&attributes(attributes)
+		+e.wrapper
+			+e('h2').heading How Urlaubsglück works?
+			+e('ul').list
+				each val, index in ['one', 'two', 'three']
+					+e('li')(class='step_#{val}')
+						+step(getData('steps.json'))(id='step#{index+1}')
+						+e('span').arrow_prev
+							+icon('arrow')(class='arrow-img_prev')
+						+e('span').arrow_next
+							+icon('arrow')(class='arrow-img_next')
+
+
