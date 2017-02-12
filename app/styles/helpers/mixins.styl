@@ -55,6 +55,9 @@ rem()
 		push(remified, unit(arg/$base-font-size, 'rem'))
 	return remified
 
+tracking($tracking)
+	letter-spacing: ($tracking / 1000 * 1em)
+
 wrapper($width=$content-width)
 	max-width $width
 	margin 0 auto
