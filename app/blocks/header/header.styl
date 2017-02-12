@@ -15,7 +15,7 @@
 	&__wrapper
 		wrapper()
 
-		+below($middle)
+		+below($large)
 			padding-x prc(50/768)
 
 		+below($small)
@@ -78,16 +78,16 @@
 			color $ui-base-color
 
 		&:active
-			color $ui-base-color
 			top 2px
+			color $ui-base-color
 
 		&_signup
+			margin-left em(17, 14)
 			padding-x em(17, 14)
 			text-align center
 			background-color rgba(26, 25, 21, 0)
 			border 2px solid #fff
 			border-radius em(18, 14)
-			margin-left em(17, 14)
 
 			&:hover
 				border 2px solid $ui-base-color
