@@ -3,11 +3,11 @@
 	text-align center
 
 	&__avatar
+		position relative
+		margin-x auto
+		margin-bottom em(18)
 		width em(120)
 		height em(120)
-		margin-x auto
-		position relative
-		margin-bottom em(18)
 
 	&__image
 		width 100%
@@ -16,14 +16,14 @@
 
 	&__icon-bg
 		position absolute
+		right em(-5)
+		bottom em(-4)
 		display inline-block
 		width em(40)
 		height em(40)
-		border em(4) solid #fff
 		background-color $ui-base-color
+		border em(4) solid #fff
 		border-radius 50%
-		right em(-5)
-		bottom em(-4)
 
 		&_cup
 			background-color #1cd7ad
@@ -36,8 +36,8 @@
 
 	&__icon
 		position absolute
-		left 50%
 		top 50%
+		left 50%
 		transform translate(-50%, -50%)
 		fill #fff
 
@@ -54,18 +54,18 @@
 			size(em(16), em(15))
 
 	&__name
+		margin-bottom 17px
 		display block
-		color #333
 		font-family $Montserrat
 		font-size 14px
 		font-weight 700
-		margin-bottom 17px
+		color #333
 
 	&__quote
-		color #666
 		font-family $Roboto
 		font-size 14px
 		font-weight 300
 		line-height (16/14)
+		color #666
 
 
