@@ -9,7 +9,7 @@ $(() => {
 
 	const selectors = ['#step1', '#step2', '#step3'];
 
-	selectors.forEach( function (element, index) {
+	selectors.forEach(function (element, index) {
 		$(element).slick({
 			fade: true,
 			dots: false,
@@ -21,14 +21,14 @@ $(() => {
 			swipe: false,
 			speed: 300,
 			slidesToShow: 1,
-			responsive: [{
-				breakpoint: 769,
-				settings: {
-					arrows: false,
+			responsive: [
+				{
+					breakpoint: 769,
+					settings: {
+						arrows: false
+					}
 				}
-
-			}]
+			]
 		});
 	});
-
 });
